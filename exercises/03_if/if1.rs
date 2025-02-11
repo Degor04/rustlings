@@ -4,10 +4,24 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+    if a>b{
+        a
+    }
+    else{
+        if b>a {
+            b
+        }
+        else{
+            println!("The numbers are equal"); // com o ";" é uma apenas um instrucao para escrever na tela
+            // ja nao e uma funcao que retorna {}... se o tirarmos o pensa que estamos a retornar {} nada
+            b
+        }
+    }
 }
 
 fn main() {
     // You can optionally experiment here.
+    bigger(1,2)
 }
 
 // Don't mind this for now :)

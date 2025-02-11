@@ -3,12 +3,25 @@ fn picky_eater(food: &str) -> &str {
     if food == "strawberry" {
         "Yummy!"
     } else {
-        1
+        if food == "potato"
+        {
+            "I guess I can eat that."
+        }
+        else{
+            "No thanks!"
+        }
     }
 }
 
 fn main() {
     // You can optionally experiment here.
+    let mut value;
+    value=picky_eater("strawberry");
+    println!("{}",value);
+    value=picky_eater("potato");
+    println!("{}",value);
+    value=picky_eater("broccoli");
+    println!("{}",value);
 }
 
 // TODO: Read the tests to understand the desired behavior.

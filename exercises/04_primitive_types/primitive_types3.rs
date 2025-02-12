@@ -1,7 +1,7 @@
 fn main() {
     // TODO: Create an array called `a` with at least 100 elements in it.
     // let a = ???
-
+    let a = [0;100]; // 0 -> the value of the 100 positions of the array
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
     } else {
